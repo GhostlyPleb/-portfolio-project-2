@@ -1,3 +1,9 @@
+const rock = document.getElementById('rock'); //gets ids for buttons
+const paper = document.getElementById('paper');
+const scissors = document.getElementById('scissors');
+const lizard = document.getElementById('lizard');
+const spock = document.getElementById('spock');
+
 var playerChoice = null; 
 var cpuChoice = null;
 
@@ -15,7 +21,7 @@ rock.onclick = function(){ //detects when the user clicks the rock button
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    }
+    };
 
 paper.onclick = function(){ //detects when the user clicks the paper button
     playerChoice = 2;
@@ -24,7 +30,7 @@ paper.onclick = function(){ //detects when the user clicks the paper button
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    }
+    };
 
 scissors.onclick = function(){ //detects when the user clicks the scissors button
     playerChoice = 3;
@@ -33,7 +39,7 @@ scissors.onclick = function(){ //detects when the user clicks the scissors butto
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    } 
+    };
 
 lizard.onclick = function(){ //detects when the user clicks the lizard button
     playerChoice = 4;
@@ -42,7 +48,7 @@ lizard.onclick = function(){ //detects when the user clicks the lizard button
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    }
+    };
 
 spock.onclick = function(){ //detects when the user clicks the spock button
     playerChoice = 5;
@@ -51,7 +57,7 @@ spock.onclick = function(){ //detects when the user clicks the spock button
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    }
+    };
 
 function choiceDisplay(){ //displays the player and cpu choice
     
@@ -70,7 +76,7 @@ function playerWin(){ //function for when the players wins
     document.getElementById("playerDisplay_score").innerText = playerScore; //updates the player score
     document.getElementById("feedback").innerText= win; //displays to player that they have won the hand
     if(playerScore == 10){
-        alert("YOU HAVE BEATEN THE MACHINE!")//alerts the player that the cpu has lost when max score has been reached
+        alert("YOU HAVE BEATEN THE MACHINE!"); //alerts the player that the cpu has lost when max score has been reached
         window.location.reload(); //reloads the page if player or cpu win
     }
 }
@@ -80,7 +86,7 @@ function cpuWin(){ //function for when the cpu wins
     document.getElementById("cpuDisplay_score").innerText = cpuScore; //updates the cpu score
     document.getElementById("feedback").innerText= lose; //displays to player that they have losed the hand
     if(cpuScore == 10){
-        alert("THE MACHINE HAS BEATEN YOU ... SKYNET IS ALREADY UPON US IT SEEMS!") //alerts the player that the cpu has won when max score has been reached
+        alert("THE MACHINE HAS BEATEN YOU ... SKYNET IS ALREADY UPON US IT SEEMS!"); //alerts the player that the cpu has won when max score has been reached
         window.location.reload(); //reloads the page if player or cpu win
     }
 }
@@ -102,116 +108,121 @@ function result() { //function to determine the outcome of each hand
     switch(playerChoice){ 
         case 1: //cpu rock selection
             if(cpuChoice == 1){
-                console.log("DRAW!")
+                console.log("DRAW!");
                 gameDraw();
             }
             if(cpuChoice == 2){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 3){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 4){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 5){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             break;
         case 2: //cpu paper selection
             if(cpuChoice == 1){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 2){
-                console.log("DRAW!")
+                console.log("DRAW!");
                 gameDraw();
             }
             if(cpuChoice == 3){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 4){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 5){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             break;
         case 3: //cpu scissors selection
             if(cpuChoice == 1){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 2){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 3){
-                console.log("DRAW!")
+                console.log("DRAW!");
                 gameDraw();
             }
             if(cpuChoice == 4){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 5){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             break;
         case 4: //cpu lizard selection
             if(cpuChoice == 1){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 2){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 3){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 4){
-                console.log("DRAW!")
+                console.log("DRAW!");
                 gameDraw();
             }
             if(cpuChoice == 5){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             break;
         case 5: //cpu spock selection
             if(cpuChoice == 1){
-                console.log("WINS!")
+                console.log("WINS!");
                 playerWin();
             }
             if(cpuChoice == 2){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 3){
-                console.log("WIN!")
+                console.log("WIN!");
                 playerWin();
             }
             if(cpuChoice == 4){
-                console.log("LOSE!")
+                console.log("LOSE!");
                 cpuWin();
             }
             if(cpuChoice == 5){
-                console.log("DRAW!")
+                console.log("DRAW!");
                 gameDraw();
             }
             break;
     }
 }
+
+
+
+
+
 
 
 
