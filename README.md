@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS LIZARD SPOCK GAME
 
-The purpose of this website is to people to enjoy the gaem "ROCK PAPER SCISSORS LIZARD SPOCK" 
+The purpose of this website is for people to enjoy the game "ROCK PAPER SCISSORS LIZARD SPOCK" 
 The website is very simplistic and will hopefully provide some entertainment.
 
 ![Responsice Mockup](assets/images/website_mockup.png)
