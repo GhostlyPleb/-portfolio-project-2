@@ -1,0 +1,148 @@
+body {
+    background-color: #444;
+}
+
+h1, h2{
+    color: #FFF;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.playerSelections {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    background-color: rgb(77, 77, 77);
+    border: none;
+    outline: none;
+    transform: scale(0.8);
+    transition: 200ms;
+}
+
+.playerSelections:hover {
+    transform: scale(1.0);
+}
+
+.gameResult {
+    color: #FFF;
+    font-size: 2rem;
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.gameSelections {
+    color: #FFF;
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#playerDisplay_score, #feedback, #cpuDisplay_score, #p_optionSelected, #c_optionSelected {
+    color: rgb(200, 104, 248);
+    background-color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 350px) {
+    .playerSelections
+    {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    body {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .gameResult, .gameSelections {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        
+        display: inline-block;
+        margin: 100px;
+    }
+}
+
+
+@media only screen and (max-width : 700px) {
+    .playerSelections
+    {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    body {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .gameResult, .gameSelections {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        
+        display: inline-block;
+        margin: 100px;    
+    }
+
+    .design {
+        position: absolute;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .playerSelections
+    {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    body {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .gameResult, .gameSelections {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        
+        display: inline-block;
+        margin: 100px;
+    }
+
+    .design{
+        position: absolute;
+        width: 50%;
+    }
+}
