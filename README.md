@@ -12,7 +12,7 @@ The website is very simplistic and will hopefully provide some entertainment.
   There is no navigation on this site as the website is just a simple game for the user to enjoy. The player chooses from one of the 5 options.
   after the selection, a random number is generated to simulate the cpu turn and depending on the selections. a outcome will be determined via switch statement and nested   if statements
   
-  also as the player hovers over there selection, their selection will be increase in size to give the player some feedback as to their selection.
+  also as the player hovers over there selection, their selection will increase in size to give the player some feedback as to their selection.
 
 ![gameplay](assets/images/game_screenshot.png) 
 
@@ -25,7 +25,7 @@ The website is very simplistic and will hopefully provide some entertainment.
 
 ## Features Left to Implement
 
--__better design__
+- __better design__
   I would have like to have worked on the CSS more as it is something that I struggle with and would have liked to add alot more flare and finese. (will come back to     improve it)
   would like to add sound effects and other such feedback for the user, maybe some animations to show the result of each hand.
 
@@ -36,7 +36,7 @@ The website is very simplistic and will hopefully provide some entertainment.
 
 ## Bugs
 
-Didnt come across any bugs in the javascript portion of this project, but the CSS I struggled with the alighment of page when doing my media querys (need to practice CSS more)
+Didnt come across any bugs in the javascript portion of this project, but the CSS, I struggled with the alighment of the text on the web page when doing my media querys (need to practice CSS more)
 
 ### Solved Bugs
 
@@ -53,8 +53,6 @@ Didnt come across any bugs in the javascript portion of this project, but the CS
 
 - JSHINT: had slight error but corrected and passed.
 
-- Images of all the tests
-
 ![test1](assets/images/html_check.png)
 
 ![test2](assets/images/css_check.png)
@@ -66,11 +64,11 @@ Didnt come across any bugs in the javascript portion of this project, but the CS
 
 ## Deployment
 
-- The was deployed to GitHub pages. The steps to deply are as follows:
+- The website was deployed to GitHub pages. The steps to deploy are as follows:
 - In the Github repository, navigate to the settings tab.
 - From the source section drop-down menu, select the master branch.
 - Once the master branch has been selected, the page provided the link the completed website
-- Here is the live link: https://ghostlypleb.github.io/portfolio-project-1/
+- Here is the live link: https://ghostlypleb.github.io/-portfolio-project-2
 
 ## Credits 
 
@@ -79,4 +77,4 @@ The image used was obtained from google images and was photoshoped by me to extr
 
 ## Media
 
-- All the images were collected from google images.
+- All the images were collected from google images and photoshoped by me.
