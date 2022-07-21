@@ -10,7 +10,7 @@ The website is very simplistic and will hopefully provide some entertainment.
 - __Gameplay__
 
   There is no navigation on this site as the website is just a simple game for the user to enjoy. The player chooses from one of the 5 options.
-  after the selection, a random number is generated to simulate the cpu turn and depending the selections. a outcome will be determined via switch statement and nested   if statements
+  after the selection, a random number is generated to simulate the cpu turn and depending on the selections. a outcome will be determined via switch statement and nested   if statements
   
   also as the player hovers over there selection, their selection will be increase in size to give the player some feedback as to their selection.
 
