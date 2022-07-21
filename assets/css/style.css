@@ -46,13 +46,13 @@ h1, h2{
     align-items: center;
 }
 
-#playerDisplay_score, #feedback, #cpuDisplay_score, #p_optionSelected, #c_optionSelected {
+#playerDisplay_score, #feedback, #cpuDisplay_score, #p_optionSelected, #c_optionSelected { /*css for text relating to the player/cpu's inputs/scores/selections*/
     color: rgb(200, 104, 248);
     background-color: rgb(63, 63, 63);
     font-weight: bold;
 }
 
-@media only screen and (max-width : 350px) {
+@media only screen and (max-width : 350px) { /*media query for devices with a max width of 350px*/
     .playerSelections
     {
         display: table-cell;
@@ -81,7 +81,7 @@ h1, h2{
 }
 
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 700px) { /*media query for devices with a max width of 700px*/
     .playerSelections
     {
         display: table-cell;
@@ -114,7 +114,40 @@ h1, h2{
     }
 }
 
-@media only screen and (max-width : 960px) {
+@media only screen and (max-width : 960px) { /*media query for devices with a max width of 960px*/
+    .playerSelections
+    {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    body {
+        display: table-cell;
+        background-color: #444;
+        color: #FFF;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .gameResult, .gameSelections {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        
+        display: inline-block;
+        margin: 100px;
+    }
+
+    .design{
+        position: absolute;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 1200px) { /*media query for devices with a max width of 1200px*/
     .playerSelections
     {
         display: table-cell;
