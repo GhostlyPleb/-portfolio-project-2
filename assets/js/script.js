@@ -1,4 +1,4 @@
-const rock = document.getElementById('rock'); //gets ids for buttons
+const rock = document.getElementById('rock'); //gets id's for buttons
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const lizard = document.getElementById('lizard');
@@ -14,14 +14,14 @@ var win = "WIN!";
 var lose = "LOSE!";
 var draw = "DRAW!";
 
-rock.onclick = function(){ //detects when the user clicks the rock button 
+rock.onclick = function(){ //detects when the user clicks the rock button
     playerChoice = 1;
     console.log(playerChoice); //testing the the dection of each click in the console.
     cpuTurn();
     result();
     console.log(playerScore, cpuScore); //logs the player and cpu score to console
     choiceDisplay();
-    };
+};
 
 paper.onclick = function(){ //detects when the user clicks the paper button
     playerChoice = 2;
