@@ -51,7 +51,7 @@ Didnt come across any bugs in the javascript portion of this project, but the CS
 
 - ACCESSIBILITY: passed lighthouse
 
--JSHINT: had slight error but corrected and passed.
+- JSHINT: had slight error but corrected and passed.
 
 - Images of all the tests
 
